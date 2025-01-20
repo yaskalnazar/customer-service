@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class CustomerController implements CustomerApi {
 
-    CustomerService customerService;
+    private CustomerService customerService;
 
     @Override
     public ResponseEntity<CustomerResponse> createCustomer(CustomerRequest request) {
