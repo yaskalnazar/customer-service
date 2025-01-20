@@ -6,11 +6,13 @@ import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.ToString;
 
 import java.time.LocalDate;
 
 @AllArgsConstructor
 @Getter
+@ToString
 public class CustomerRequest {
 
     @NotBlank(message = "Name cannot be empty")
